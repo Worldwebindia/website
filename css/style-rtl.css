@@ -1,0 +1,50 @@
+html, body{ direction:rtl; overflow-x:hidden;}
+.ltr { direction:ltr;}
+ul, ol { margin: 0 25px 15px 0;}
+
+.oldie .menu-1 { width:400px;}
+.oldie .menu-1 ul { float:left;}
+
+.header a.logo,
+.menu-1,
+.menu-1 ul,
+.menu-1 ul li { float:right; }
+.menu-1 ul { padding-right:25px}
+.menu-2,
+.menu-2 ul,
+.menu-2 ul li { float:left;}
+.menu-2 ul li a { 
+	padding-right:28px;		
+}
+.menu-2 ul li.menu-search a { 
+	background-position:90% center;
+}
+.menu-2 ul li.menu-facebook a { 
+	background-position:85% center;
+}
+.menu-2 ul li.menu-blog a { 
+	background-position:86% center;
+}
+
+/* =============== Media Queries ================ */
+@media screen and (max-width:1100px) { /* Target iPad (1024px) and Tabs (960px) */
+
+}
+@media screen and (max-width:959px) { /* Target iPad (768px) */
+	
+}
+@media screen and (max-width: 767px) { /* Target Mobile (640px) */
+		
+}
+@media screen and (max-width: 639px) { /* Target Mobile (480px and 568px) */
+	
+}
+@media screen and (max-width:567px){ /* Target Mobile (480px) */
+
+}
+@media screen and (max-width: 479px) {/* Target Mobile (320px) */
+
+}
+@media screen and (max-width: 319px) {/* Target Mobile (less 320px) */
+
+}
