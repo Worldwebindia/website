@@ -1,0 +1,108 @@
+<!doctype html>
+<!--[if lt IE 8]> <html class="no-js oldie ie7 ie" lang="he"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 ie" lang="he"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 ie" lang="he"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="he"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Genesis</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="icon" href="favicon.png">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-rtl.css">
+</head>
+<body>
+<!-- Header -->
+<div class="header-wrapper">
+  <header class="header clearfix">
+    <!-- Mobile Menu -->
+    <div class="mob-menu"> <span class="mob-menu-btn"></span>
+      <ul class="list-reset">
+        <li><a href="#">תיק עבודות</a></li>
+        <li><a href="#">עלינו</a></li>
+        <li><a href="#">צור קשר</a></li>
+        <li><a href="#">בלוג</a></li>
+      </ul>
+    </div>
+    <!-- // End Mobile Menu -->
+    <a class="logo" href="index.html" title="Genesis">Genesis</a>
+    <div class="menu-1">
+      <ul>
+        <li><a href="#">תיק עבודות</a></li>
+        <li><a href="#">עלינו</a></li>
+        <li><a href="#">צור קשר</a></li>
+      </ul>
+    </div>
+    <div class="menu-2">
+      <ul>
+        <li class="menu-search"><a href="#">03-5361513</a></li>
+        <li class="menu-facebook"><a href="#"></a></li>
+        <li class="menu-blog">בלוג</li>
+      </ul>
+    </div>
+    <!-- Mobile Top Contacts -->
+    <div class="topcontactlinks-mob"> <a href="#" class="mb_phone" target="_blank"></a> </div>
+    <!-- // End Mobile Top Contacts -->
+  </header>
+</div>
+<!--// End Header -->
+<!-- Home Banner -->
+<div class="home-banner clearfix">
+  <div class="slider-wrapper" id="SliderHome">
+    <div class="slide"> <a href="#"><img src="images/banner-2.jpg" alt="banner"></a>
+      <div class="sliter-text">
+        <h3>פילוח אוכלוסיית קהל היעד: אזורים, גילאיים, מצב סוציו אקונומי</h3>
+        <h2>בדיקת מוצרים/עסקים דומים ומתחרים בשוק סקר שוק</h2>
+        <h5>בדיקת עסקים מותגים דומים בעולם</h5>
+      </div>
+    </div>
+    <div class="slide"> <a href="#"><img src="images/banner-1.jpg" alt="banner"></a>
+      <div class="sliter-text">
+        <h3>פילוח אוכלוסיית קהל היעד: אזורים, גילאיים, מצב סוציו אקונומי</h3>
+        <h2>בדיקת מוצרים/עסקים דומים ומתחרים בשוק סקר שוק</h2>
+        <h5>בדיקת עסקים מותגים דומים בעולם</h5>
+      </div>
+    </div>
+    <div class="slide"> <a href="#"><img src="images/banner-1.jpg" alt="banner"></a>
+      <div class="sliter-text">
+        <h3>פילוח אוכלוסיית קהל היעד: אזורים, גילאיים, מצב סוציו אקונומי</h3>
+        <h2>בדיקת מוצרים/עסקים דומים ומתחרים בשוק סקר שוק</h2>
+        <h5>בדיקת עסקים מותגים דומים בעולם</h5>
+      </div>
+    </div>
+  </div>
+  <div id="bx-pager">
+    <div class="mb_dots"><a data-slide-index="0">df</a><a data-slide-index="1">df</a><a data-slide-index="2">df</a></div>
+  </div>
+  <div class="timerblock clearfix">
+    <div class="timer"> <span class="clock"><img src="images/icon-clock.png" alt=""></span>
+      <div class="timer-line"><span style="width:0%;"></span></div>
+    </div>
+    <div class="timerblockarrow"></div>
+  </div>
+</div>
+<!--// End Home Banner -->
+<!-- Scripts -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="bxslider/jquery.bxslider.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script>
+	$(document).ready(function() { 
+		// Slider 
+		$('#SliderHome').bxSlider({
+		  auto: true,
+		  pause: 4000,
+		  pagerCustom: '.mb_dots',
+		  onSlideBefore : function(){$(".timer-line span").stop().animate({width:'0%'}, 0 )},
+		  onSlideAfter : function(){$(".timer-line span").stop().animate({width:'100%'}, 4000 )},
+		  onSliderLoad : function(){$(".timer-line span").stop().animate({width:'100%'}, 4000 )}
+		});
+				
+	});
+	</script>
+<script src="js/custom-scripts.js"></script>
+</body>
+</html>
